@@ -6,11 +6,14 @@ Returns: null and prints an error if the dataset is not imported
 Or
 Returns: the dataset
 """
-def load_data(filepath):
+def load_data(filepath, index_date=None):
     try:
-        df=pd.read_csv(filepath)
+        if index_date:
+            df=pd.read_csv(filepath, index_col=0, parse_dates=True)
+        else:
+            df=pd.read_csv(filepath)
     except Exception as e:
-        print(e)
+        print("We can't execute that: ",e)
         return None
     else:
         return df
