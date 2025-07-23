@@ -22,8 +22,6 @@ project-name/
 ├── notebooks/          # Jupyter Notebooks for analysis
 ├── src/                # Python scripts for data processing
 ├── visuals/            # Saved plots and visualizations
-├── reports/            # Business summary or presentation
-├── requirements.txt    # Project dependencies
 └── README.md           # This file
 ```
 
